@@ -58,4 +58,4 @@ PrintArray(myArray);
 int min = findMin(myArray);
 int max = findMax(myArray);
 int maxMinusMin = getMaxMinusMin(min, max);
-Console.WriteLine($"The difference of minimal ({min}) and maximal ({max}) numbers of array is {maxMinusMin}");
+Console.WriteLine($"The difference of maximal ({max}) and minimal ({min}) numbers of array is {maxMinusMin}");
