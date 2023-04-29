@@ -45,17 +45,17 @@ int findMin(int[] array)
     return result;
 }
 
-int getMinMinusMax(int min, int max)
+int getMaxMinusMin(int min, int max)
 {
     return max - min;
 }
 
-int arrayLength = ReadInt("Enter the array size");
-int minValue = ReadInt("Enter the minimum possible value");
-int maxValue = ReadInt("Enter the maximum possible value");
+int arrayLength = ReadInt("Enter array size");
+int minValue = ReadInt("Enter minimum value");
+int maxValue = ReadInt("Enter maximum value");
 int[] myArray = CreateArray(arrayLength, minValue, maxValue);
 PrintArray(myArray);
 int min = findMin(myArray);
 int max = findMax(myArray);
-int minMinusMax = getMinMinusMax(min, max);
-Console.WriteLine($"The difference of minimal {min} and maximal {max} elements is {minMinusMax}");
+int maxMinusMin = getMaxMinusMin(min, max);
+Console.WriteLine($"The difference of minimal ({min}) and maximal ({max}) numbers of array is {maxMinusMin}");
